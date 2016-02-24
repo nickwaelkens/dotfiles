@@ -1,0 +1,1 @@
+source $ZSH/zsh/plugins/k/k.sh
