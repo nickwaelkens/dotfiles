@@ -16,6 +16,7 @@ brew 'readline'
 brew 'roundup'
 brew 'unrar'
 brew 'wget'
+brew 'yarn'
 
 cask 'caffeine'
 cask 'sublime-text'
