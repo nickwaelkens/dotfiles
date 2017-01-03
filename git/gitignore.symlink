@@ -3,3 +3,5 @@
 *.swp
 .idea/
 *.log
+coverage/
+dist/
