@@ -6,6 +6,7 @@ cask_args appdir: '/Applications'
 tap 'homebrew/services'
 
 brew 'zsh'
+brew 'zsh-autosuggestions'
 brew 'hub'
 brew 'ack'
 brew 'coreutils'
