@@ -1,8 +1,7 @@
 #!/bin/sh
 #
-# Delete all local branches that have been merged into HEAD. Stolen from
-# our favorite @tekkub:
-#
-#   https://plus.google.com/115587336092124934674/posts/dXsagsvLakJ
+# - Deletes all local branches that have been merged on the remote, besides master
+# - Remove remote-tracking from branches that no longer exist on the remote
+# - Remove stale remote-tracking branches
 
-git branch -d `git branch --merged | grep -v '^*' | grep -v 'master' | tr -d '\n'`
+git branch --merged | egrep -v "(^\*|master)" | xargs git branch -d && git fetch -p && git remote prune origin
