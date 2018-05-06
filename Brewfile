@@ -5,8 +5,11 @@ update
 
 # Upgrade any already-installed formulae
 upgrade
+
+# Taps
 tap 'homebrew/services'
 
+# Tools
 brew 'zsh'
 brew 'zsh-autosuggestions'
 brew 'hub'
@@ -22,7 +25,10 @@ brew 'roundup'
 brew 'unrar'
 brew 'wget'
 
+# More recent versions of OSX tools
 brew 'nano'
+
+# Applications
 cask '1password'
 cask 'dropbox'
 cask 'flux'
@@ -61,4 +67,6 @@ cask 'font-source-serif-pro'
 cask 'font-roboto'
 cask 'font-roboto-condensed'
 cask 'font-roboto-mono'
+
+# Remove outdated versions from the cellar
 cleanup
