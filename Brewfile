@@ -23,6 +23,7 @@ brew 'unrar'
 brew 'wget'
 
 cask '1password'
+cask 'dropbox'
 cask 'caffeine'
 cask 'sublime-text'
 cask 'spectacle'
