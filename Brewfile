@@ -22,6 +22,7 @@ brew 'roundup'
 brew 'unrar'
 brew 'wget'
 
+cask '1password'
 cask 'caffeine'
 cask 'sublime-text'
 cask 'spectacle'
