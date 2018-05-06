@@ -24,6 +24,7 @@ brew 'wget'
 
 cask '1password'
 cask 'dropbox'
+cask 'flux'
 cask 'caffeine'
 cask 'sublime-text'
 cask 'spectacle'
