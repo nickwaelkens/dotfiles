@@ -22,6 +22,7 @@ brew 'roundup'
 brew 'unrar'
 brew 'wget'
 
+brew 'nano'
 cask '1password'
 cask 'dropbox'
 cask 'flux'
