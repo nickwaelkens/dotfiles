@@ -1,6 +1,10 @@
 cask_args appdir: '/Applications'
 
+# Update to latest version of Homebrew
+update
 
+# Upgrade any already-installed formulae
+upgrade
 tap 'homebrew/services'
 
 brew 'zsh'
