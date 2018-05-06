@@ -61,3 +61,4 @@ cask 'font-source-serif-pro'
 cask 'font-roboto'
 cask 'font-roboto-condensed'
 cask 'font-roboto-mono'
+cleanup
