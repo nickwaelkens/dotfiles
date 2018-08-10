@@ -115,3 +115,6 @@ command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.e
 
 # Open PhpStorm in current directory
 alias storm="open -a /Applications/PhpStorm.app ./"
+
+# Copy a uuidv4 to my clipboard
+alias uuid="uuidgen | tr '[:upper:]' '[:lower:]' | tr -d '\n' | pbcopy && pbpaste && echo"
