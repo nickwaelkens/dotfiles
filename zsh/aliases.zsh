@@ -112,3 +112,6 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # Faster npm for Europeans
 command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.eu/"
+
+# Open PhpStorm in current directory
+alias storm="open -a /Applications/PhpStorm.app ./"
