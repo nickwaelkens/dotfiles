@@ -55,6 +55,7 @@ cask 'macdown'
 cask 'aerial'
 cask 'whatsapp'
 cask 'insomnia'
+cask 'notion'
 
 # Fonts
 cask 'font-firacode-nerd-font'
