@@ -56,6 +56,7 @@ cask 'aerial'
 cask 'whatsapp'
 cask 'insomnia'
 cask 'notion'
+cask 'kitematic'
 
 # Fonts
 cask 'font-firacode-nerd-font'
