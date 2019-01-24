@@ -3,5 +3,4 @@ npm install -g \
 n \ 
 fixpack \ 
 npm-check \ 
-localtunnel \ 
-surge
+localtunnel
