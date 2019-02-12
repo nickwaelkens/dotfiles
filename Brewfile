@@ -57,6 +57,7 @@ cask 'whatsapp'
 cask 'insomnia'
 cask 'notion'
 cask 'kitematic'
+cask 'sensiblesidebuttons'
 
 # Fonts
 cask 'font-firacode-nerd-font'
