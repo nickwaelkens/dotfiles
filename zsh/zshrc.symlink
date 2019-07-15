@@ -1,3 +1,6 @@
+# debugging slow zsh
+# zmodload zsh/zprof
+
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
 
@@ -29,8 +32,17 @@ do
 done
 
 # initialize autocomplete here, otherwise functions won't be loaded
-autoload -U compinit
-compinit
+autoload -Uz compinit
+
+# but only do it once a day
+if [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]; then
+	compinit
+else
+	compinit -c
+fi
+
+autoload -U promptinit; promptinit
+prompt spaceship
 
 # load every completion after autocomplete loads
 for file in ${(M)config_files:#*/completion.zsh}
@@ -38,4 +50,10 @@ do
   source $file
 done
 
+DISABLE_UNTRACKED_FILES_DIRTY="true"
+
 unset config_files
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# debugging slow zsh
+# zprof
