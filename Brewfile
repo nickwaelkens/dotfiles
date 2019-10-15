@@ -10,8 +10,7 @@ upgrade
 tap 'homebrew/services'
 
 # Tools
-brew 'zsh'
-brew 'zsh-autosuggestions'
+brew 'fish'
 brew 'hub'
 brew 'ack'
 brew 'coreutils'
