@@ -1,0 +1,5 @@
+#!/bin/sh
+
+mkcd() {
+  mkdir -p "$@" && cd "$@"
+}
