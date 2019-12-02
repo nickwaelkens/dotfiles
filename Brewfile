@@ -10,8 +10,7 @@ upgrade
 tap 'homebrew/services'
 
 # Tools
-brew 'zsh'
-brew 'zsh-autosuggestions'
+brew 'fish'
 brew 'hub'
 brew 'ack'
 brew 'coreutils'
@@ -32,7 +31,7 @@ brew 'nano'
 cask '1password'
 cask 'dropbox'
 cask 'flux'
-cask 'caffeine'
+cask 'keepingyouawake'
 cask 'sublime-text'
 cask 'spectacle'
 cask 'firefox'
