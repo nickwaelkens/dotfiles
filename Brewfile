@@ -1,13 +1,8 @@
 cask_args appdir: '/Applications'
 
-# Update to latest version of Homebrew
-update
-
-# Upgrade any already-installed formulae
-upgrade
-
 # Taps
 tap 'homebrew/services'
+tap 'homebrew/cask-fonts'
 
 # Tools
 brew 'fish'
@@ -69,6 +64,3 @@ cask 'font-source-serif-pro'
 cask 'font-roboto'
 cask 'font-roboto-condensed'
 cask 'font-roboto-mono'
-
-# Remove outdated versions from the cellar
-cleanup
