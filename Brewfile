@@ -1,57 +1,61 @@
+# Make sure we’re using the latest Homebrew
+update
+
+# Upgrade any already-installed formulae
+upgrade
+
 cask_args appdir: '/Applications'
 
 # Taps
-tap 'homebrew/services'
 tap 'homebrew/cask-fonts'
+tap 'homebrew/services'
 
 # Tools
-brew 'fish'
-brew 'hub'
 brew 'ack'
 brew 'coreutils'
+brew 'fish'
 brew 'grc'
-brew 'imagemagick'
 brew 'libgit2'
-brew 'openssl'
 brew 'node'
+brew 'openssl'
 brew 'readline'
 brew 'roundup'
 brew 'unrar'
 brew 'wget'
 
 # More recent versions of OSX tools
+brew 'curl'
+brew 'git'
+brew 'grep'
 brew 'nano'
 
 # Applications
 cask '1password'
+cask 'aerial'
+cask 'alfred'
+cask 'docker'
 cask 'dropbox'
-cask 'flux'
-cask 'keepingyouawake'
-cask 'sublime-text'
-cask 'spectacle'
 cask 'firefox'
 cask 'google-chrome'
-cask 'slack'
-cask 'tunnelbear'
-cask 'vlc'
-cask 'puush'
-cask 'ngrok'
-cask 'sequel-pro'
-cask 'iterm2'
-cask 'spotify'
-cask 'sourcetree'
-cask 'alfred'
-cask 'visual-studio-code'
-cask 'docker'
-cask 'docker-clean'
-cask 'keka'
-cask 'macdown'
-cask 'aerial'
-cask 'whatsapp'
 cask 'insomnia'
-cask 'notion'
+cask 'iterm2'
+cask 'keepingyouawake'
+cask 'keka'
 cask 'kitematic'
+cask 'macdown'
+cask 'ngrok'
+cask 'notion'
+cask 'puush'
+cask 'sequel-pro'
+cask 'slack'
+cask 'sourcetree'
+cask 'spectacle'
+cask 'spotify'
+cask 'sublime-text'
 cask 'sensiblesidebuttons'
+cask 'visual-studio-code'
+cask 'vlc'
+cask 'whatsapp'
 
 # Fonts
 cask 'font-firacode-nerd-font'
