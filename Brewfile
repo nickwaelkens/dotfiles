@@ -31,9 +31,9 @@ brew 'nano'
 
 # Applications
 cask '1password'
-cask 'aerial'
 cask 'alfred'
 cask 'docker'
+cask 'dozer'
 cask 'dropbox'
 cask 'firefox'
 cask 'google-chrome'
@@ -56,6 +56,10 @@ cask 'sensiblesidebuttons'
 cask 'visual-studio-code'
 cask 'vlc'
 cask 'whatsapp'
+
+# Screensavers
+cask 'aerial'
+cask 'brooklyn'
 
 # Fonts
 cask 'font-firacode-nerd-font'
