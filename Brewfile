@@ -64,6 +64,8 @@ cask 'brooklyn'
 
 # Fonts
 cask 'font-firacode-nerd-font'
+cask 'font-hack'
+cask 'font-inter'
 cask 'font-lato'
 cask 'font-open-sans'
 cask 'font-open-sans-condensed'
