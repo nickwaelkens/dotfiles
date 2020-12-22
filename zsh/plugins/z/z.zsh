@@ -1,1 +1,0 @@
-source $ZSH/zsh/plugins/z/z.sh
