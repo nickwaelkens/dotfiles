@@ -1,7 +1,0 @@
-#!/bin/sh
-#
-# - Deletes all local branches that have been merged on the remote, besides master
-# - Remove remote-tracking from branches that no longer exist on the remote
-# - Remove stale remote-tracking branches
-
-git branch --merged | egrep -v "(^\*|master)" | xargs git branch -d && git fetch -p && git remote prune origin
