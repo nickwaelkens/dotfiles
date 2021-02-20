@@ -1,41 +1,82 @@
-# Sample gitconfig
-#
-
-[hub]
-        protocol = https
 [user]
-        name = AUTHORNAME
-        email = AUTHOREMAIL
+        name = Nick Waelkens
+        email = hi@nick.plus
+        signinkey =
+
 [credential]
-        helper = GIT_CREDENTIAL_HELPER
+        helper = osxkeychain
+
 [alias]
         co = checkout
-        promote = !$ZSH/bin/git-promote
-        wtf     = !$ZSH/bin/git-wtf
-        rank-contributors = !$ZSH/bin/git-rank-contributors
-        count   = !git shortlog -sn
-[color]
-        diff = auto
-        status = auto
-        branch = auto
-        ui = true
+        diff = diff --color --color-words --abbrev
+        lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(blue) <%an>%Creset' --abbrev-commit
+        tags = tag -l
+        branches = branch -a
+        remotes = remote -v
+        contributors = shortlog --summary --numbered
+
 [core]
-        excludesfile = ~/.gitignore
+	    excludesfile = ~/.gitignore
+	    attributesfile = ~/.gitattributes
         editor = vim
+
 [apply]
         whitespace = nowarn
+
 [difftool "sourcetree"]
         cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --nosplash \"$LOCAL\" \"$REMOTE\"
         path =
+
 [mergetool "sourcetree"]
         cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
         trustExitCode = true
         keepBackup = false
+
 [help]
         autocorrect = 1
+
 [push]
         # See `git help config` (search for push.default)
         # for more information on different options of the below setting.
         #
         # Setting to git 2.0 default to suppress warning message
         default = simple
+
+[hub]
+        protocol = https
+
+[url "ssh://git@github.com/"]
+        insteadOf = https://github.com/
+
+[commit]
+        template = ~/.stCommitMsg
+        gpgsign = true
+
+[gpg]
+        program = /Applications/SourceTree.app/Contents/Resources/bin/stgpg.sh
+
+[diff]
+        renames = copies
+
+[color]
+        ui = true
+
+[color "diff-highlight"]
+        oldNormal = red bold
+        oldHighlight = red bold 52
+        newNormal = green bold
+        newHighlight = green bold 22
+
+[color "diff"]
+        meta = 11
+        frag = magenta bold
+        commit = yellow bold
+        old = red bold
+        new = green bold
+        whitespace = red reverse
+
+[branch]
+	autosetuprebase = always
+
+[rerere]
+        enabled = true
