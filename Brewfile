@@ -21,6 +21,7 @@ brew 'node'
 brew 'openssl'
 brew 'readline'
 brew 'roundup'
+brew 'svn'
 brew 'wget'
 
 # More recent versions of OSX tools
@@ -64,7 +65,7 @@ cask 'aerial'
 cask 'brooklyn'
 
 # Fonts
-cask 'font-firacode-nerd-font'
+cask 'font-fira-code-nerd-font'
 cask 'font-hack'
 cask 'font-inter'
 cask 'font-lato'
@@ -74,5 +75,4 @@ cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 cask 'font-roboto'
-cask 'font-roboto-condensed'
 cask 'font-roboto-mono'
