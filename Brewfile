@@ -21,7 +21,6 @@ brew 'node'
 brew 'openssl'
 brew 'readline'
 brew 'roundup'
-brew 'unrar'
 brew 'wget'
 
 # More recent versions of OSX tools
