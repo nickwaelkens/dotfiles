@@ -23,6 +23,7 @@ brew 'readline'
 brew 'roundup'
 brew 'svn'
 brew 'wget'
+brew 'yarn'
 
 # More recent versions of OSX tools
 brew 'curl'
