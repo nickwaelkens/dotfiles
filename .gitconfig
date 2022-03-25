@@ -1,7 +1,7 @@
 [user]
-        name = Nick Waelkens
-        email = hi@nick.plus
-        signinkey =
+	name = Nick Waelkens
+	email = hi@nick.plus
+	signingkey =
 
 [credential]
         helper = osxkeychain
@@ -16,21 +16,21 @@
         contributors = shortlog --summary --numbered
 
 [core]
-	    excludesfile = ~/.gitignore
-	    attributesfile = ~/.gitattributes
+        excludesfile = /Users/nickwaelkens/.gitignore
+        attributesfile = ~/.gitattributes
         editor = vim
 
 [apply]
         whitespace = nowarn
 
 [difftool "sourcetree"]
-        cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --nosplash \"$LOCAL\" \"$REMOTE\"
+        cmd = opendiff \"$LOCAL\" \"$REMOTE\"
         path =
 
 [mergetool "sourcetree"]
-        cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+        cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
         trustExitCode = true
-        keepBackup = false
+            keepBackup = false
 
 [help]
         autocorrect = 1
@@ -53,7 +53,7 @@
         gpgsign = true
 
 [gpg]
-        program = /Applications/SourceTree.app/Contents/Resources/bin/stgpg.sh
+        program = gpg
 
 [diff]
         renames = copies
@@ -76,7 +76,7 @@
         whitespace = red reverse
 
 [branch]
-	autosetuprebase = always
+        autosetuprebase = always
 
 [rerere]
         enabled = true

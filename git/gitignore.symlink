@@ -1,8 +1,0 @@
-.DS_Store
-*~
-*.swp
-.idea/
-*.log
-coverage/
-dist/
-.yarn/
