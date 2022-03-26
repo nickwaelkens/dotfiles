@@ -1,3 +1,6 @@
+# Apps… but better
+alias ls lsd
+
 # Shortcuts
 alias reload! "source ~/.config/fish/config.fish"
 alias ... "cd ../.."
