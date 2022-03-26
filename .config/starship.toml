@@ -1,0 +1,45 @@
+# Replace the "❯" symbol in the prompt with "⚡" on success, with "✗" on error.
+[character]
+success_symbol = "[⚡](purple)"
+error_symbol = "[✗](bold red) "
+
+# Shows how charged the device's battery is and its current charging status.
+[battery]
+full_symbol = "🔋 "
+charging_symbol = "⚡️ "
+discharging_symbol = "💀 "
+
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$cmd_duration\
+$line_break\
+$python\
+$character"""
+
+[directory]
+style = "blue"
+
+[git_branch]
+symbol = "🌱 "
+format = "$symbol[$branch]($style)"
+style = "bright-white"
+
+[git_status]
+format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
+style = "cyan"
+conflicted = "​"
+untracked = "​"
+modified = "​"
+staged = "​"
+renamed = "​"
+deleted = "​"
+stashed = "≡"
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "bright-yellow"
