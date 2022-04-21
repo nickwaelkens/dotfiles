@@ -7,3 +7,6 @@ jump shell fish | source
 
 # https://github.com/starship/starship
 starship init fish | source
+
+# https://github.com/Schniz/fnm
+fnm env --use-on-cd | source
