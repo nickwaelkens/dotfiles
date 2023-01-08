@@ -1,4 +1,4 @@
-syntax on
+syntax enable
 
 " Wrap gitcommit file types at the appropriate length
-filetype indent plugin on
+filetype plugin indent on

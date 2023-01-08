@@ -1,0 +1,2 @@
+require("nickwaelkens")
+print("Initialized")
