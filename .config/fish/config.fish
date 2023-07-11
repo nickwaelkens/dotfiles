@@ -13,5 +13,8 @@ fnm env --use-on-cd | source
 
 gpgconf --launch gpg-agent
 
+# Add private SSH key to Keychain so it's automatically available to ssh.
+ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+
 # https://atuin.sh
 atuin init fish | source
