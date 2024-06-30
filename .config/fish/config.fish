@@ -12,3 +12,6 @@ starship init fish | source
 fnm env --use-on-cd | source
 
 gpgconf --launch gpg-agent
+
+# https://atuin.sh
+atuin init fish | source
