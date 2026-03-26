@@ -1,7 +1,12 @@
 [user]
 	name = Nick Waelkens
 	email = hi@nick.plus
-	signingkey = 1A7DC53A7F65CA66
+
+[include]
+	path = ~/.gitconfig.local
+
+[includeIf "gitdir:~/dev/duna/"]
+	path = ~/.gitconfig-duna
 
 [credential]
         helper = osxkeychain
@@ -16,7 +21,8 @@
         contributors = shortlog --summary --numbered
 
 [core]
-        excludesfile = /Users/nickwaelkens/.gitignore
+    pager = delta
+	excludesfile = /Users/nickwaelkens/.gitignore
         attributesfile = ~/.gitattributes
         editor = vim
 
@@ -24,12 +30,12 @@
         whitespace = nowarn
 
 [difftool "sourcetree"]
-        cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-        path =
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
 
 [mergetool "sourcetree"]
-        cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-        trustExitCode = true
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
             keepBackup = false
 
 [help]
@@ -49,14 +55,15 @@
         insteadOf = https://github.com/
 
 [commit]
-        template = ~/.stCommitMsg
-        gpgsign = true
+	template = ~/.stCommitMsg
+	gpgsign = true
 
 [gpg]
-        program = gpg
+	program = /opt/homebrew/bin/gpg
 
 [diff]
         renames = copies
+	tool = opendiff
 
 [color]
         ui = true
@@ -80,3 +87,17 @@
 
 [rerere]
         enabled = true
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true    # use n and N to move between diff sections
+
+    # delta detects terminal colors automatically; set one of these to disable auto-detection
+    # dark = true
+    # light = true
+
+[merge]
+    conflictstyle = zdiff3
+	tool = opendiff

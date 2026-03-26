@@ -16,5 +16,13 @@ gpgconf --launch gpg-agent
 # Add private SSH key to Keychain so it's automatically available to ssh.
 ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 
-# https://atuin.sh
-atuin init fish | source
+if status is-interactive
+    atuin init fish | source
+end
+
+# Added by OrbStack: command-line tools and integration
+# This won't be added again if you remove it.
+source ~/.orbstack/shell/init2.fish 2>/dev/null || :
+
+# Source device-specific config if it exists
+test -f ~/.config/fish/local.fish; and source ~/.config/fish/local.fish

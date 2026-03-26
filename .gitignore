@@ -7,3 +7,8 @@ coverage/
 dist/
 .yarn/
 **/**/.claude
+.gitconfig.local
+.gitconfig-duna
+.config/fish/local.fish
+.computer-name
+duna/
