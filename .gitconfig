@@ -1,7 +1,7 @@
 [user]
 	name = Nick Waelkens
 	email = hi@nick.plus
-	signingkey =
+	signingkey = 1A7DC53A7F65CA66
 
 [credential]
         helper = osxkeychain
