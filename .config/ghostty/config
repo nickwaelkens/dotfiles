@@ -1,0 +1,65 @@
+# =============================================================================
+# Ghostty config — tmux-optimized, Catppuccin Mocha
+# =============================================================================
+
+# --- Font ---
+font-family = Monaspace Neon
+font-size = 13
+font-feature = calt
+font-feature = ss01
+
+# --- Catppuccin Mocha palette ---
+background = 1e1e2e
+foreground = cdd6f4
+cursor-color = f5e0dc
+
+# Normal colors (0-7)
+palette = 0=#45475a
+palette = 1=#f38ba8
+palette = 2=#a6e3a1
+palette = 3=#f9e2af
+palette = 4=#89b4fa
+palette = 5=#cba6f7
+palette = 6=#89dceb
+palette = 7=#bac2de
+
+# Bright colors (8-15)
+palette = 8=#585b70
+palette = 9=#f38ba8
+palette = 10=#a6e3a1
+palette = 11=#f9e2af
+palette = 12=#89b4fa
+palette = 13=#cba6f7
+palette = 14=#89dceb
+palette = 15=#a6adc8
+
+# Selection colors
+selection-background = 45475a
+selection-foreground = cdd6f4
+
+# --- Window / tmux chrome ---
+window-decoration = false
+macos-titlebar-style = hidden
+window-padding-x = 0
+window-padding-y = 0
+confirm-close-surface = false
+
+# --- Transparency + blur ---
+background-opacity = 0.95
+background-blur-radius = 20
+
+# --- Cursor ---
+cursor-style = block
+cursor-style-blink = true
+
+# --- Text rendering ---
+bold-is-bright = true
+
+# --- macOS / keyboard ---
+macos-option-as-alt = true
+
+# --- Mouse ---
+mouse-hide-while-typing = true
+
+# --- Shell integration ---
+shell-integration = detect
