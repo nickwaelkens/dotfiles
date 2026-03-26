@@ -18,6 +18,7 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 alias resetdock="defaults write com.apple.dock tilesize -int 36; killall Dock"
 
 alias gl "git log --all --decorate --oneline --graph"
+alias gs "git status"
 alias gd "git branch | grep -v "master" | xargs git branch -D"
 alias git-delete-merged "git branch --merged | grep -v \"master|main\" >/tmp/merged-branches && \
                            nano /tmp/merged-branches && xargs git branch -d </tmp/merged-branches"
