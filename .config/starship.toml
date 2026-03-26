@@ -1,3 +1,6 @@
+# Give node some time.
+command_timeout = 1000
+
 # Replace the "❯" symbol in the prompt with "⚡" on success, with "✗" on error.
 [character]
 success_symbol = "[⚡](purple)"
